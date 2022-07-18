@@ -1,6 +1,71 @@
-<h3>form cursos</h3>
-<p>Get your FORM here</p>
+<h5 class="titulo">INGRESE NUEVO CURSO</h5>
 
+<form>
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text"><i class="fa-solid fa-user"> </i> </span>
+    <input
+      formControlName="nombre"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Nombre"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i class="fa-solid fa-user"></i>
+    </span>
+    <input
+      formControlName="descripcion"
+      maxlength="50"
+      type="text"
+      class="form-control"
+      placeholder="Descripcion"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i class="fa-solid fa-calendar-days"></i>
+    </span>
+    <input
+      formControlName="fechaDesde"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Fecha de Inicio"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i class="fa-solid fa-calendar-days"></i>
+    </span>
+    <input
+      formControlName="fechaHasta"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Fecha de Finalizacion"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i> </i>
+    </span>
+    <input
+      formControlName="capacidad"
+      maxlength="9"
+      type="text"
+      class="form-control"
+      placeholder="Cupos disponibles"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-success">Aceptar</button>
+</form>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

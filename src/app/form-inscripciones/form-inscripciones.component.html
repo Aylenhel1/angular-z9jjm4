@@ -1,2 +1,93 @@
-<h3>form inscripciones</h3>
-<p>form-inscripciones works!</p>
+<h5 class="titulo">INGRESE SUS DATOS</h5>
+
+<form  >
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text"><i class="fa-solid fa-user"> </i> </span>
+    <input
+      formControlName="nombre"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Nombre"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i class="fa-solid fa-user"></i>
+    </span>
+    <input
+      formControlName="apellido"
+      maxlength="50"
+      type="text"
+      class="form-control"
+      placeholder="Apellido"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i class="fa-solid fa-calendar-days"></i>
+    </span>
+    <input
+      formControlName="tipo"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Tipo"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i class="fa-solid fa-calendar-days"></i>
+    </span>
+    <input
+      formControlName="nroDocumento"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Nro de Documento"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">
+      <i> </i>
+    </span>
+    <input
+      formControlName="fechaNacimiento"
+      maxlength="10"
+      type="text"
+      class="form-control"
+      placeholder="Fecha de nacimiento: dia /mes/ año"
+    />
+  </div>
+
+  <div class="input-group input-group-lg mb-3">
+  <span class="input-group-text">
+    <i> </i>
+  </span>
+  <input
+    formControlName="edad"
+    maxlength="10"
+    type="text"
+    class="form-control"
+    placeholder="Edad"
+  />
+</div>
+<div class="input-group input-group-lg mb-3">
+<span class="input-group-text">
+  <i> </i>
+</span>
+<input
+  formControlName="curso"
+  maxlength="10"
+  type="text"
+  class="form-control"
+  placeholder="Curso a Inscribirse"
+/>
+</div>
+
+  <button type="submit" class="btn btn-success">Aceptar</button>
+</form>

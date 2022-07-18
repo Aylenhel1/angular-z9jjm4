@@ -2,6 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 import { ListaCursosComponent } from './lista-cursos/lista-cursos.component';
 import { ListaPersonasComponent } from './lista-personas/lista-personas.component';
 import { FormCursosComponent } from './form-cursos/form-cursos.component';
