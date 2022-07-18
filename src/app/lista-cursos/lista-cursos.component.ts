@@ -2,6 +2,7 @@ import { Component,OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Curso } from 'src/app/models/curso';
 import { __values } from 'tslib';
+import { FormCursosComponent } from '../form-cursos/form-cursos.component';
 
 
 
@@ -19,17 +20,9 @@ export class ListaCursosComponent implements OnInit {
     {nombre:' ',descripcion:' ',fechaDesde:' ',fechaHasta:' ',capacidad:' '},
     {nombre:' ',descripcion:' ',fechaDesde:' ',fechaHasta:' ',capacidad:' '}
   ];
-
-  form:FormGroup;
-  constructor(private fb:FormBuilder) {
-    this.form = this.fb.group({
-      nombre:['', Validators.required,Validators.maxLength(20)],
-      descripcion:['',Validators.required,Validators.maxLength(50)],
-      fechaDesde:['',Validators.required,Validators.maxLength(10)],
-      fechaHasta:['',Validators.required,Validators.maxLength(10),Validators.minLength(8)],
-      capacidad:['',Validators.required,Validators.maxLength(9)],
-     
-})
+FormCursosComponent: any;
+  constructor() {
+    
 }
 
 ngOnInit(): void {
@@ -37,15 +30,15 @@ ngOnInit(): void {
 agregarCurso(){
 
   const curso:any={
-   nombre:this.form.get ('nombre')?.value,
-   descripcion:this.form.get ('descripcion')?.value,
-   fechaDesde:this.form.get ('fechaDesde')?.value,
-   fechaHasta:this.form.get ('fechaHasta')?.value,
-   capacidad:this.form.get ('capacidad')?.value,
+   nombre:this.FormCursosComponent.form.get ('nombre')?.value,
+   descripcion:this.FormCursosComponent.form.get ('descripcion')?.value,
+   fechaDesde:this.FormCursosComponent.form.get ('fechaDesde')?.value,
+   fechaHasta:this.FormCursosComponent.form.get ('fechaHasta')?.value,
+   capacidad:this.FormCursosComponent.form.get ('capacidad')?.value,
 
   }
    this.listaCursos.push(curso)
-   this.form.reset();       
+   this.FormCursosComponent.form.reset();       
 }
 
   eliminarCurso(index:number) {
