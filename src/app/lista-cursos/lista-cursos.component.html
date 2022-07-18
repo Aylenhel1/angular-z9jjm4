@@ -1,11 +1,28 @@
-<h3>Lista cursos</h3>
-  <div class="col-lg-6">
-    <div class="curso">
-        <h5 class="titulo">LISTADO DE CURSOS</h5> 
-
-    </div>
+<div class="col-lg-6">
+  <div class="curso">
+    <h5 class="titulo">LISTADO DE CURSOS</h5>
+    <Table class="table">
+      <tbody>
+        <tr *ngFor="let curso of listaCursos; let j = index">
+          <td>{{ curso.nombre }}</td>
+          <td>{{ curso.descripcion }}</td>
+          <td>{{ curso.fechaDesde }}</td>
+          <td>{{ curso.fechaHasta }}</td>
+          <td>{{ curso.capacidad }}</td>
+          <td>
+            <i class="fa-solid fa-pen-to-square text-info"></i>
+          </td>
+          <td>
+            <i
+              (click)="eliminarCurso(j)"
+              class="fa-solid fa-trash-can text-danger"
+            ></i>
+          </td>
+        </tr>
+      </tbody>
+    </Table>
+  </div>
 </div>
-
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

@@ -8,9 +8,9 @@ import { __values } from 'tslib'
   templateUrl: './form-cursos.component.html',
   styleUrls: ['./form-cursos.component.css']
 })
-export class FormCursosComponent /*implements OnInit*/ {
+export class FormCursosComponent implements OnInit {
 
-  /* listaCursos:Curso[]=[
+  listaCursos:Curso[]=[
     new Curso ('idiomas','Ingles','02/05/2022','06/09/2023','60'),
     {nombre:' ',descripcion:' ',fechaDesde:' ',fechaHasta:' ',capacidad:' '},
     {nombre:' ',descripcion:' ',fechaDesde:' ',fechaHasta:' ',capacidad:' '}
@@ -46,7 +46,7 @@ agregarCurso(){
 
   eliminarCurso(index:number) {
  this.listaCursos.splice(index,1);
-}*/
+}
 
 
 
